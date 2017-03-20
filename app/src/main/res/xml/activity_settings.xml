@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference android:key="animation"
+        android:title="@string/settings_animation_title"
+        android:defaultValue="true"
+        android:summaryOn="@string/settings_animation_summaryOn"
+        android:summaryOff="@string/settings_animation_summaryOff"
+        />
+
+    <SwitchPreference android:key="history"
+        android:title="@string/settings_history_title"
+        android:defaultValue="true"
+        android:summaryOn="@string/setting_history_summaryOn"
+        android:summaryOff="@string/settings_history_summaryOff"/>
+
+    <EditTextPreference android:key="history_max"
+        android:title="@string/settings_history_limit"
+        android:defaultValue="100"
+        android:maxLength="4"
+        android:inputType="numberDecimal"
+        android:summary="@string/settings_history_limit_summary"/>
+
+</PreferenceScreen>
